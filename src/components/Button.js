@@ -12,11 +12,11 @@ export const Button = ({children, type, onClick, buttonStyle, buttonSize}) => {
 
     return (
         <Link to='/' className="">
-            <button className={'btn ${checkButtonStyle} ${checkButtonSize}'}>
+            <button className={'btn ${checkButtonStyle} ${checkButtonSize}'}
+            onClick={onClick}
+            type={type}>
                 {children}
             </button>
-
-            <Button>Get Started</Button>
         </Link>
     )
 }
