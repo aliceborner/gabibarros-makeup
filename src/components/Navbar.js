@@ -22,7 +22,6 @@ function Navbar() {
 
     return (
         <nav className='navbar'>
-            <div className='navar-container'>
                 <Link to='/' className='navbar-logo'>
                     Gabriela Barros <i class='fab fa-connectdevelop'></i>
                 </Link>
@@ -58,7 +57,7 @@ function Navbar() {
                     </li>
                 </ul>
                 {button && <Button buttonStyle='btn--outline'>Test</Button>}
-            </div>
+            
         </nav>
     )
 }
