@@ -2,6 +2,7 @@ import React from "react";
 import "../App.css";
 import { Button } from "./Button";
 import "./MainSection.css";
+import InstagramEmbed from "react-instagram-embed";
 
 function MainSection() {
   return (
@@ -10,18 +11,32 @@ function MainSection() {
         <Button
           className="btns"
           buttonStyle="btn--outline"
-          buttonSize="btn--large"
+          buttonSize="btn--medium"
         >
-          GET STARTED
+          CONTATO
         </Button>
         <Button
           className="btns"
           buttonStyle="btn--primary"
-          buttonSize="btn--large"
+          buttonSize="btn--medium"
           onClick={console.log("hey")}
         >
-          Test 2
+          SOBRE MIM
         </Button>
+
+        <InstagramEmbed
+          url="https://www.instagram.com/gabrielabmakeup/"
+          clientAccessToken="123|456"
+          maxWidth={320}
+          hideCaption={false}
+          containerTagName="div"
+          protocol=""
+          injectScript
+          onLoading={() => {}}
+          onSuccess={() => {}}
+          onAfterRender={() => {}}
+          onFailure={() => {}}
+        />
       </div>
     </div>
   );
